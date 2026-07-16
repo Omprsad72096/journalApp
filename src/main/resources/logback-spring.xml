@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Import Spring Boot's default logging foundations -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+    <include resource="org/springframework/boot/logging/logback/file-appender.xml" />
+
+    <!-- 1. Root Logger: Controls Spring, Tomcat, Mongo, etc. -->
+    <!-- This sends default framework logs to BOTH your console and file -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <!-- 2. Your Application Logger: Routes your custom logs -->
+    <!-- additivity="false" cuts the link to the console so your logs don't bleed into the terminal -->
+    <logger name="net.omprasad.Journal" level="INFO" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+</configuration>
