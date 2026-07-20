@@ -32,6 +32,7 @@ public class JournalEntryService {
         userService.addUserWithoutEncryptingPass(user);
         log.info("Post saved: {}", journalEntry);
     }
+
     public void saveEntry(JournalEntry journalEntry) {
         journalEntryRepository.save(journalEntry);
         log.info("Post updated: {}", journalEntry);

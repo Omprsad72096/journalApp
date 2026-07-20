@@ -1,145 +1,566 @@
-2026-07-16 08:43:38 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketException: ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:100)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.UnknownHostException: ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net
-	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
-	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
-	... 5 common frames omitted
-2026-07-16 09:00:13 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketException: ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:100)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.UnknownHostException: ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net
-	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:909)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
-	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
-	... 5 common frames omitted
-2026-07-16 09:56:10 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketException: ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net: nodename nor servname provided, or not known
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:100)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.UnknownHostException: ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net: nodename nor servname provided, or not known
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
-	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1134)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1712)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1060)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
-	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
-	... 5 common frames omitted
-2026-07-16 09:56:20 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketException: ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net: nodename nor servname provided, or not known
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:100)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.UnknownHostException: ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net: nodename nor servname provided, or not known
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
-	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1134)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1712)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1060)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1702)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1582)
-	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
-	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
-	... 5 common frames omitted
-2026-07-16 12:02:18 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=183048917, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003a, setVersion=20, topologyVersion=TopologyVersion{processId=6a57afacae29c877b6bc0ac1, counter=6}, lastWriteDate=Thu Jul 16 12:02:18 IST 2026, lastUpdateTimeNanos=59675754272875}
-2026-07-16 12:02:18 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003a and max set version 20
-2026-07-16 12:05:17 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=153113958, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57ae673745cffc6cee7173, counter=4}, lastWriteDate=Thu Jul 16 12:05:16 IST 2026, lastUpdateTimeNanos=59688717000375}
-2026-07-16 12:05:24 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
-	at com.mongodb.internal.connection.InternalStreamConnection.createReadTimeoutException(InternalStreamConnection.java:819)
-	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:807)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:857)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
-	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:277)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:302)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1068)
-	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:824)
-	... 4 common frames omitted
-2026-07-16 12:05:24 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketOpenException: Exception opening socket
-	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:85)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.SocketException: Network is unreachable
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:546)
-	at java.base/sun.nio.ch.Net.connect(Net.java:535)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
-	at java.base/java.net.Socket.connect(Socket.java:659)
-	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
-	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
-	... 3 common frames omitted
-2026-07-16 12:05:37 INFO  [SLF4JLogger:76] - Exception in monitor thread while connecting to server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017
-com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
-	at com.mongodb.internal.connection.InternalStreamConnection.createReadTimeoutException(InternalStreamConnection.java:819)
-	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:807)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:857)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
-	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:277)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:302)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1068)
-	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
-	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:824)
-	... 4 common frames omitted
-2026-07-16 12:05:39 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=166305917, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57ae673745cffc6cee7173, counter=4}, lastWriteDate=Thu Jul 16 12:05:39 IST 2026, lastUpdateTimeNanos=59710961362500}
-2026-07-16 12:05:57 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=275639709, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57b1b50ebdb36f617f7cbb, counter=3}, lastWriteDate=Thu Jul 16 12:05:56 IST 2026, lastUpdateTimeNanos=59728844817791}
-2026-07-16 12:05:59 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=220328583, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003a, setVersion=20, topologyVersion=TopologyVersion{processId=6a57afacae29c877b6bc0ac1, counter=6}, lastWriteDate=Thu Jul 16 12:05:59 IST 2026, lastUpdateTimeNanos=59731532917333}
-2026-07-16 12:05:59 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003a and max set version 20
-2026-07-16 12:06:29 INFO  [GracefulShutdown:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2026-07-16 12:06:29 INFO  [GracefulShutdown:76] - Graceful shutdown complete
+2026-07-18 19:43:12 INFO  [StartupInfoLogger:53] - Starting JournalApplication using Java 25.0.3 with PID 65910 (/Users/omprasad/Work/Development/Spring Boot/Journal/target/classes started by omprasad in /Users/omprasad/Work/Development/Spring Boot/Journal)
+2026-07-18 19:43:12 INFO  [SpringApplication:658] - The following 1 profile is active: "dev"
+2026-07-18 19:43:12 INFO  [RepositoryConfigurationDelegate:145] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-18 19:43:12 INFO  [RepositoryConfigurationDelegate:213] - Finished Spring Data repository scanning in 15 ms. Found 2 MongoDB repository interfaces.
+2026-07-18 19:43:12 INFO  [TomcatWebServer:111] - Tomcat initialized with port 8080 (http)
+2026-07-18 19:43:12 INFO  [DirectJDKLog:168] - Starting service [Tomcat]
+2026-07-18 19:43:12 INFO  [DirectJDKLog:168] - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-18 19:43:12 INFO  [DirectJDKLog:168] - Initializing Spring embedded WebApplicationContext
+2026-07-18 19:43:12 INFO  [ServletWebServerApplicationContext:301] - Root WebApplicationContext: initialization completed in 320 ms
+2026-07-18 19:43:12 INFO  [SLF4JLogger:71] - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.5.2"}, "platform": "Java/Amazon.com Inc./25.0.3+9-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='omprasad7875', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@372461a9, com.mongodb.Jep395RecordCodecProvider@5fffb692, com.mongodb.KotlinCodecProvider@48cb2d73]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.twnwfni.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-coh77o-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-18 19:43:12 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:43:12 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:43:12 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:43:12 INFO  [SLF4JLogger:71] - Waiting for server to become available for operation with ID 5. Remaining time: 29998 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].
+2026-07-18 19:43:13 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=190277208, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003a, setVersion=20, topologyVersion=TopologyVersion{processId=6a57afacae29c877b6bc0ac1, counter=6}, lastWriteDate=Sat Jul 18 19:43:12 IST 2026, lastUpdateTimeNanos=139510593766166}
+2026-07-18 19:43:13 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=188706125, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57ae673745cffc6cee7173, counter=4}, lastWriteDate=Sat Jul 18 19:43:12 IST 2026, lastUpdateTimeNanos=139510595034041}
+2026-07-18 19:43:13 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003a and max set version 20
+2026-07-18 19:43:13 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=187104542, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57b1b50ebdb36f617f7cbb, counter=3}, lastWriteDate=Sat Jul 18 19:43:12 IST 2026, lastUpdateTimeNanos=139510603167916}
+2026-07-18 19:43:13 INFO  [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110] - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-07-18 19:43:13 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [journal/**, user/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-18 19:43:13 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [admin/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-18 19:43:13 INFO  [TomcatWebServer:243] - Tomcat started on port 8080 (http) with context path '/'
+2026-07-18 19:43:13 INFO  [StartupInfoLogger:59] - Started JournalApplication in 1.519 seconds (process running for 1.708)
+2026-07-18 19:43:15 INFO  [GracefulShutdown:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18 19:43:15 INFO  [GracefulShutdown:76] - Graceful shutdown complete
+2026-07-18 19:44:05 INFO  [StartupInfoLogger:53] - Starting JournalApplication using Java 25.0.3 with PID 65983 (/Users/omprasad/Work/Development/Spring Boot/Journal/target/classes started by omprasad in /Users/omprasad/Work/Development/Spring Boot/Journal)
+2026-07-18 19:44:05 INFO  [SpringApplication:658] - The following 1 profile is active: "dev"
+2026-07-18 19:44:06 INFO  [RepositoryConfigurationDelegate:145] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-18 19:44:06 INFO  [RepositoryConfigurationDelegate:213] - Finished Spring Data repository scanning in 13 ms. Found 2 MongoDB repository interfaces.
+2026-07-18 19:44:06 INFO  [TomcatWebServer:111] - Tomcat initialized with port 8080 (http)
+2026-07-18 19:44:06 INFO  [DirectJDKLog:168] - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-18 19:44:06 INFO  [DirectJDKLog:168] - Starting service [Tomcat]
+2026-07-18 19:44:06 INFO  [DirectJDKLog:168] - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-18 19:44:06 INFO  [DirectJDKLog:168] - Initializing Spring embedded WebApplicationContext
+2026-07-18 19:44:06 INFO  [ServletWebServerApplicationContext:301] - Root WebApplicationContext: initialization completed in 308 ms
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.5.2"}, "platform": "Java/Amazon.com Inc./25.0.3+9-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='omprasad7875', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@433ea2ac, com.mongodb.Jep395RecordCodecProvider@7f977fba, com.mongodb.KotlinCodecProvider@446e7065]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.twnwfni.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-coh77o-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Waiting for server to become available for operation with ID 5. Remaining time: 29998 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=197591000, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57b1b50ebdb36f617f7cbb, counter=3}, lastWriteDate=Sat Jul 18 19:44:06 IST 2026, lastUpdateTimeNanos=139564158365083}
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=196747583, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003a, setVersion=20, topologyVersion=TopologyVersion{processId=6a57afacae29c877b6bc0ac1, counter=6}, lastWriteDate=Sat Jul 18 19:44:06 IST 2026, lastUpdateTimeNanos=139564158445666}
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=197105833, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a57ae673745cffc6cee7173, counter=4}, lastWriteDate=Sat Jul 18 19:44:06 IST 2026, lastUpdateTimeNanos=139564158365166}
+2026-07-18 19:44:06 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003a and max set version 20
+2026-07-18 19:44:07 INFO  [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110] - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-07-18 19:44:07 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [journal/**, user/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-18 19:44:07 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [admin/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-18 19:44:07 INFO  [DirectJDKLog:168] - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-18 19:44:07 INFO  [TomcatWebServer:243] - Tomcat started on port 8080 (http) with context path '/'
+2026-07-18 19:44:07 INFO  [StartupInfoLogger:59] - Started JournalApplication in 1.666 seconds (process running for 1.861)
+2026-07-18 19:44:38 INFO  [DirectJDKLog:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-18 19:44:38 INFO  [FrameworkServlet:532] - Initializing Servlet 'dispatcherServlet'
+2026-07-18 19:44:38 INFO  [FrameworkServlet:554] - Completed initialization in 1 ms
+2026-07-18 19:44:38 ERROR [AdminController:29] - Returning the data
+2026-07-18 19:44:38 INFO  [AdminController:30] - Returning the data
+2026-07-18 19:44:38 WARN  [AdminController:33] - Returning the data
+2026-07-18 19:44:38 INFO  [AdminController:36] - Got the list of users, 
+Users: [User(id=6a58948585e22eca0497bb6f, userName=test, password=$2a$10$ZWXiCMVJ1eDhJSjGeaX7OOyYxmZohR/x44R7fiGulqnDC29hQxDj6, journalEntries=[JournalEntry(id=6a58950985e22eca0497bb71, title=night, content=night, date=2026-07-16T13:53:37.272)], roles=[USER, ADMIN]), User(id=6a58949785e22eca0497bb70, userName=test2, password=$2a$10$Dy0HkPpgqZskTL/0Y/Tfk.q.8/lo46s10ka8mE3iqHMHPNe2Z3n/O, journalEntries=[JournalEntry(id=6a58952f85e22eca0497bb72, title=top secret, content=lets complete spring 🔥, date=2026-07-16T13:54:15.703), JournalEntry(id=6a58ea6e684f415a9d257b6a, title=morning, content=went to gym, date=2026-07-16T19:57:58.579)], roles=[USER, ADMIN]), User(id=6a58e991684f415a9d257b68, userName=admin, password=$2a$10$odxM21Xpvk.D0.SQGOr41.htoSoCazWEmbpyeNXtX3eIJX7vZC2Xy, journalEntries=[], roles=[USER, ADMIN]), User(id=6a58ea32684f415a9d257b69, userName=Nishant Kumar, password=$2a$10$/cQ.gz8nljyg4/XMzu6JxuBkKEg.o3k8bSnuLsNlAOszvj3Q6TrLm, journalEntries=[JournalEntry(id=6a58eac3684f415a9d257b6b, title=morning, content=went to gym, date=2026-07-16T19:59:23.616)], roles=[USER, ADMIN]), User(id=6a5a24ce957110f49f11bc9d, userName=om, password=$2a$10$e7xrcwpJqneIdQuH4ZRNAODzshfUBfglIVliZYQEuEwzg6UVdBYLC, journalEntries=null, roles=[USER])]
+2026-07-18 20:03:08 INFO  [GracefulShutdown:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18 20:03:08 INFO  [GracefulShutdown:76] - Graceful shutdown complete
+2026-07-20 12:49:08 INFO  [StartupInfoLogger:53] - Starting JournalApplicationTests using Java 25.0.3 with PID 92212 (started by omprasad in /Users/omprasad/Work/Development/Spring Boot/Journal)
+2026-07-20 12:49:08 INFO  [SpringApplication:658] - The following 1 profile is active: "dev"
+2026-07-20 12:49:08 INFO  [RepositoryConfigurationDelegate:145] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-20 12:49:08 INFO  [RepositoryConfigurationDelegate:213] - Finished Spring Data repository scanning in 15 ms. Found 2 MongoDB repository interfaces.
+2026-07-20 12:49:09 INFO  [SLF4JLogger:71] - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.5.2"}, "platform": "Java/Amazon.com Inc./25.0.3+9-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='omprasad7875', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1f884bd6, com.mongodb.Jep395RecordCodecProvider@4f081b5d, com.mongodb.KotlinCodecProvider@474749b8]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.twnwfni.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-coh77o-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-20 12:49:09 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:49:09 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:49:09 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:49:09 INFO  [SLF4JLogger:71] - Waiting for server to become available for operation with ID 5. Remaining time: 29995 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].
+2026-07-20 12:49:10 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=229201583, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003b, setVersion=20, topologyVersion=TopologyVersion{processId=6a5cead6e247bce8688d3963, counter=6}, lastWriteDate=Mon Jul 20 12:49:09 IST 2026, lastUpdateTimeNanos=160348062181541}
+2026-07-20 12:49:10 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003b and max set version 20
+2026-07-20 12:49:10 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=129563083, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ced20f9f63f9cae96b6a7, counter=3}, lastWriteDate=Mon Jul 20 12:49:09 IST 2026, lastUpdateTimeNanos=160348332754125}
+2026-07-20 12:49:10 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=131229291, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ce83531feb70d72b5bf18, counter=4}, lastWriteDate=Mon Jul 20 12:49:09 IST 2026, lastUpdateTimeNanos=160348393272000}
+2026-07-20 12:49:10 INFO  [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110] - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-07-20 12:49:10 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [journal/**, user/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 12:49:10 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [admin/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 12:49:10 INFO  [StartupInfoLogger:59] - Started JournalApplicationTests in 2.216 seconds (process running for 2.536)
+2026-07-20 12:49:11 INFO  [AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [net.omprasad.Journal.service.UserServiceTests]: UserServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-20 12:49:11 INFO  [SpringBootTestContextBootstrapper:234] - Found @SpringBootConfiguration net.omprasad.Journal.JournalApplication for test class net.omprasad.Journal.service.UserServiceTests
+2026-07-20 12:49:11 ERROR [UserService:36] - Failed to create user, Exception: 
+org.springframework.dao.DuplicateKeyException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "om" }', details={}}.
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.doTranslateException(MongoExceptionTranslator.java:108)
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:74)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3037)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:618)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1562)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1364)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1292)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.save(Unknown Source)
+	at net.omprasad.Journal.service.UserService.addUser(UserService.java:32)
+	at net.omprasad.Journal.service.UserServiceTests.testSaveUser(UserServiceTests.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.params.ArgumentCountValidator.interceptTestTemplateMethod(ArgumentCountValidator.java:45)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:99)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:231)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:209)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$0(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$1(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.executeForProvider(TestTemplateTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:103)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:43)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mongodb.MongoWriteException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "om" }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1123)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:481)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:475)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$17(MongoTemplate.java:1568)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:616)
+	... 137 common frames omitted
+2026-07-20 12:49:11 ERROR [UserService:36] - Failed to create user, Exception: 
+org.springframework.dao.DuplicateKeyException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "test" }', details={}}.
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.doTranslateException(MongoExceptionTranslator.java:108)
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:74)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3037)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:618)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1562)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1364)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1292)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.save(Unknown Source)
+	at net.omprasad.Journal.service.UserService.addUser(UserService.java:32)
+	at net.omprasad.Journal.service.UserServiceTests.testSaveUser(UserServiceTests.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.params.ArgumentCountValidator.interceptTestTemplateMethod(ArgumentCountValidator.java:45)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:99)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:231)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:209)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$0(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$1(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.executeForProvider(TestTemplateTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:103)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:43)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mongodb.MongoWriteException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "test" }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1123)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:481)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:475)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$17(MongoTemplate.java:1568)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:616)
+	... 137 common frames omitted
+2026-07-20 12:49:11 ERROR [UserService:36] - Failed to create user, Exception: 
+org.springframework.dao.DuplicateKeyException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "admin" }', details={}}.
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.doTranslateException(MongoExceptionTranslator.java:108)
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:74)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3037)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:618)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1562)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1364)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1292)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.save(Unknown Source)
+	at net.omprasad.Journal.service.UserService.addUser(UserService.java:32)
+	at net.omprasad.Journal.service.UserServiceTests.testSaveUser(UserServiceTests.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.params.ArgumentCountValidator.interceptTestTemplateMethod(ArgumentCountValidator.java:45)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:99)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:231)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:209)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$0(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$executeForProvider$1(TestTemplateTestDescriptor.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.executeForProvider(TestTemplateTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:103)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:43)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mongodb.MongoWriteException: Write operation error on server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: journaldb.users index: userName dup key: { userName: "admin" }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1123)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:498)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:481)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:475)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$17(MongoTemplate.java:1568)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:616)
+	... 137 common frames omitted
+2026-07-20 12:51:25 INFO  [StartupInfoLogger:53] - Starting JournalApplicationTests using Java 25.0.3 with PID 92445 (started by omprasad in /Users/omprasad/Work/Development/Spring Boot/Journal)
+2026-07-20 12:51:25 INFO  [SpringApplication:658] - The following 1 profile is active: "dev"
+2026-07-20 12:51:25 INFO  [RepositoryConfigurationDelegate:145] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-20 12:51:25 INFO  [RepositoryConfigurationDelegate:213] - Finished Spring Data repository scanning in 15 ms. Found 2 MongoDB repository interfaces.
+2026-07-20 12:51:25 INFO  [SLF4JLogger:71] - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.5.2"}, "platform": "Java/Amazon.com Inc./25.0.3+9-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='omprasad7875', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@57bd6a8f, com.mongodb.Jep395RecordCodecProvider@39ab5ef7, com.mongodb.KotlinCodecProvider@517704]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.twnwfni.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-coh77o-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-20 12:51:25 INFO  [SLF4JLogger:71] - Waiting for server to become available for operation with ID 2. Remaining time: 29997 ms. Selector: WritableServerSelector, topology description: {type=UNKNOWN, servers=[].
+2026-07-20 12:51:26 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:51:26 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:51:26 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 12:51:27 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=214209792, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003b, setVersion=20, topologyVersion=TopologyVersion{processId=6a5cead6e247bce8688d3963, counter=6}, lastWriteDate=Mon Jul 20 12:51:26 IST 2026, lastUpdateTimeNanos=160485141831166}
+2026-07-20 12:51:27 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003b and max set version 20
+2026-07-20 12:51:27 INFO  [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110] - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-07-20 12:51:27 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [journal/**, user/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 12:51:27 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [admin/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 12:51:28 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=151913375, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ced20f9f63f9cae96b6a7, counter=3}, lastWriteDate=Mon Jul 20 12:51:27 IST 2026, lastUpdateTimeNanos=160485876435583}
+2026-07-20 12:51:28 INFO  [StartupInfoLogger:59] - Started JournalApplicationTests in 2.841 seconds (process running for 3.167)
+2026-07-20 12:51:28 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=172532875, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ce83531feb70d72b5bf18, counter=4}, lastWriteDate=Mon Jul 20 12:51:27 IST 2026, lastUpdateTimeNanos=160485971080416}
+2026-07-20 13:18:17 INFO  [StartupInfoLogger:53] - Starting JournalApplicationTests using Java 25.0.3 with PID 94540 (started by omprasad in /Users/omprasad/Work/Development/Spring Boot/Journal)
+2026-07-20 13:18:17 INFO  [SpringApplication:658] - The following 1 profile is active: "dev"
+2026-07-20 13:18:17 INFO  [RepositoryConfigurationDelegate:145] - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-20 13:18:17 INFO  [RepositoryConfigurationDelegate:213] - Finished Spring Data repository scanning in 18 ms. Found 2 MongoDB repository interfaces.
+2026-07-20 13:18:17 INFO  [SLF4JLogger:71] - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.5.2"}, "platform": "Java/Amazon.com Inc./25.0.3+9-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='omprasad7875', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@16a3cc88, com.mongodb.Jep395RecordCodecProvider@696b52bc, com.mongodb.KotlinCodecProvider@1f884bd6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.twnwfni.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-coh77o-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Adding discovered server ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017 to client view of cluster
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Waiting for server to become available for operation with ID 5. Remaining time: 29997 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=199923125, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ce83531feb70d72b5bf18, counter=4}, lastWriteDate=Mon Jul 20 13:18:18 IST 2026, lastUpdateTimeNanos=162096521959750}
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=197717292, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=20, topologyVersion=TopologyVersion{processId=6a5ced20f9f63f9cae96b6a7, counter=3}, lastWriteDate=Mon Jul 20 13:18:18 IST 2026, lastUpdateTimeNanos=162096521959708}
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Monitor thread successfully connected to server with description ServerDescription{address=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=134052084, minRoundTripTimeNanos=0, setName='atlas-coh77o-shard-0', canonicalAddress=ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, hosts=[ac-t1ibgqq-shard-00-00.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017, ac-t1ibgqq-shard-00-01.twnwfni.mongodb.net:27017], passives=[], arbiters=[], primary='ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000003b, setVersion=20, topologyVersion=TopologyVersion{processId=6a5cead6e247bce8688d3963, counter=6}, lastWriteDate=Mon Jul 20 13:18:18 IST 2026, lastUpdateTimeNanos=162096661598625}
+2026-07-20 13:18:18 INFO  [SLF4JLogger:71] - Discovered replica set primary ac-t1ibgqq-shard-00-02.twnwfni.mongodb.net:27017 with max election id 7fffffff000000000000003b and max set version 20
+2026-07-20 13:18:20 INFO  [InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:110] - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-07-20 13:18:20 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [journal/**, user/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 13:18:20 WARN  [AbstractRequestMatcherRegistry:203] - One of the patterns in [admin/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2026-07-20 13:18:20 INFO  [StartupInfoLogger:59] - Started JournalApplicationTests in 3.025 seconds (process running for 3.406)

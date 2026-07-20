@@ -25,10 +25,17 @@ public class UserService {
 
     private static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-    public User addUser(User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRoles(Arrays.asList("USER"));
-        return userRepository.save(user);
+    public boolean addUser(User user) {
+        try{
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+            user.setRoles(Arrays.asList("USER"));
+            userRepository.save(user);
+            return true;
+        }
+        catch (Exception e) {
+            log.error("Failed to create user, Exception: ",e);
+            return false;
+        }
     }
 
     public User addUserWithoutEncryptingPass(User user) {
@@ -46,8 +53,26 @@ public class UserService {
         userRepository.deleteById(user.getId());
     }
 
-
     public User findByUserName(String userName) {
         return userRepository.findByUserName(userName);
+    }
+
+    public User addNewAdminUser(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRoles(Arrays.asList("USER","ADMIN"));
+        return userRepository.save(user);
+    }
+
+    public User addAdminRoleInUser(User user) {
+        List<String> roles = user.getRoles();
+
+        for(String r: roles) {
+            if(r.equals("ADMIN")) {
+                return user;
+            }
+        }
+
+        roles.add("ADMIN");
+        return userRepository.save(user);
     }
 }

@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
 
+
 @Slf4j
 @RestController
 @RequestMapping("/journal")
@@ -33,10 +34,6 @@ public class JournalEntryController {
         String userName = authentication.getName();
 
         User user = userService.findByUserName(userName);
-        if(user == null) {
-            log.error("No user found with username: {}", userName);
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
         log.info("User found with username: {}, and id: {}", userName, user.getId());
         List<JournalEntry> allJournalEntries = user.getJournalEntries();
         if(allJournalEntries!=null && !allJournalEntries.isEmpty()) {
@@ -55,7 +52,7 @@ public class JournalEntryController {
             return new ResponseEntity<>(myEntry, HttpStatus.CREATED);
         }
         catch (Exception e) {
-            log.error("Exception: Can't add new post, recived data: {}, Error: ", myEntry, e);
+            log.error("Exception: Can't add new post,\nrecived data: {}, \nError: ", myEntry, e);
             throw new RuntimeException("Something gone wrong, ", e);
         }
     }

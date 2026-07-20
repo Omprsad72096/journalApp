@@ -3,10 +3,9 @@ package net.omprasad.Journal.controller;
 import net.omprasad.Journal.entity.User;
 import net.omprasad.Journal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/public")
@@ -16,7 +15,13 @@ public class PublicController {
     private UserService userService;
 
     @PostMapping
-    public User addNewUser(@RequestBody User user) {
-        return userService.addUser(user);
+    public ResponseEntity<?> addNewUser(@RequestBody User user) {
+        userService.addUser(user);
+        return new ResponseEntity(HttpStatus.CREATED);
+    }
+
+    @GetMapping("/health-check")
+    String healthCheck(){
+        return "ok";
     }
 }
