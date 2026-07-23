@@ -16,8 +16,12 @@ public class PublicController {
 
     @PostMapping
     public ResponseEntity<?> addNewUser(@RequestBody User user) {
-        userService.addUser(user);
-        return new ResponseEntity(HttpStatus.CREATED);
+        Boolean isCreated = userService.addUser(user);
+
+        if(isCreated) {
+            return new ResponseEntity(HttpStatus.CREATED);
+        }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
     @GetMapping("/health-check")

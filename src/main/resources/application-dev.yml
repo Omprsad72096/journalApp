@@ -9,3 +9,6 @@ server:
   port: 8080
   servlet:
     context-path: /
+
+
+weather_api_key: ce8a9ac2f84c43198a6a669207691738

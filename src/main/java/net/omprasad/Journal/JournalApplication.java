@@ -17,13 +17,7 @@ public class JournalApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(JournalApplication.class, args);
 		System.out.println("Active profile(s): "+ context.getEnvironment().getActiveProfiles()[0]);
 	}
-
-	@Bean
-	public PlatformTransactionManager anyName(MongoDatabaseFactory dbFactory) {
-		return new MongoTransactionManager(dbFactory);
-	}
 }
 
-//MongoTransactionManager
-//PlatformTransactionManager
+
 

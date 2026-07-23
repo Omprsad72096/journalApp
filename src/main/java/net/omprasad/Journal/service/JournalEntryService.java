@@ -1,5 +1,6 @@
 package net.omprasad.Journal.service;
 
+import lombok.Setter;
 import net.omprasad.Journal.entity.JournalEntry;
 import net.omprasad.Journal.entity.User;
 import net.omprasad.Journal.repository.JournalEntryRepository;
@@ -7,14 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
-@Component
+@Service
 public class JournalEntryService {
 
     @Autowired
@@ -28,6 +31,9 @@ public class JournalEntryService {
         User user = userService.findByUserName(userName);
         journalEntry.setDate(LocalDateTime.now());
         journalEntryRepository.save(journalEntry);
+        if(user.getJournalEntries()==null) {
+            user.setJournalEntries(new ArrayList<>());
+        }
         user.getJournalEntries().add(journalEntry);
         userService.addUserWithoutEncryptingPass(user);
         log.info("Post saved: {}", journalEntry);
