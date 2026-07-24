@@ -2,6 +2,7 @@ package net.omprasad.Journal.controller;
 
 
 import lombok.extern.slf4j.Slf4j;
+import net.omprasad.Journal.cache.AppCache;
 import net.omprasad.Journal.entity.User;
 import net.omprasad.Journal.repository.UserRepository;
 import net.omprasad.Journal.service.UserService;
@@ -23,6 +24,8 @@ public class AdminController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private AppCache appCache;
 
     @GetMapping("/all-users")
     public ResponseEntity<List<User>> getAllUsers() {
@@ -57,5 +60,10 @@ public class AdminController {
 
         User temp = userService.addNewAdminUser(user);
         return new ResponseEntity<>(temp, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/claer-app-cache")
+    public void claerAppCache() {
+        appCache.init();
     }
 }

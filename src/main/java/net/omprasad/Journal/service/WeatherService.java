@@ -2,6 +2,8 @@ package net.omprasad.Journal.service;
 
 
 import net.omprasad.Journal.api.response.WeatherResponse;
+import net.omprasad.Journal.cache.AppCache;
+import net.omprasad.Journal.constants.PlaceHolders;
 import net.omprasad.Journal.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +11,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -19,13 +20,14 @@ public class WeatherService {
     @Value("${weather_api_key}")
     private String apiKey;
 
-    private static final String API = "https://api.weatherstack.com/current?access_key=<ApiKey>&query=<city>";
+    @Autowired
+    private AppCache appCache;
 
     @Autowired
     private RestTemplate restTemplate;
 
     public WeatherResponse getWeather(String city) {
-        String finalAPI = API.replace("<ApiKey>", apiKey).replace("<city>", city);
+        String finalAPI = appCache.getCache().get(AppCache.keys.WEATHER_API.toString()).replace(PlaceHolders.API_KEY, apiKey).replace(PlaceHolders.CITY, city);
 
         ResponseEntity<WeatherResponse> response = restTemplate.exchange(finalAPI, HttpMethod.GET, null, WeatherResponse.class);
 
@@ -34,7 +36,7 @@ public class WeatherService {
 
 
     public WeatherResponse postReqWithHeadersAndBodyExample(String city) {
-        String finalAPI = API.replace("<ApiKey>", apiKey).replace("<city>", city);
+        String finalAPI = appCache.getCache().get("weather_api").replace("<ApiKey>", apiKey).replace("<city>", city);
 
         // Header
         HttpHeaders httpHeaders = new HttpHeaders();
