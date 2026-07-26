@@ -32,6 +32,8 @@ public class UserController {
         User userInDb = userService.findByUserName(userName);
         userInDb.setUserName(!user.getUserName().isEmpty() ? user.getUserName() : userInDb.getUserName());
         userInDb.setPassword(!user.getPassword().isEmpty() ? user.getPassword() : userInDb.getPassword());
+        userInDb.setEmail(user.getEmail()!=null && !user.getEmail().isEmpty() ? user.getEmail() : userInDb.getEmail());
+        userInDb.setSentimentAnalysis(user.getSentimentAnalysis()!=null ? user.getSentimentAnalysis() : userInDb.getSentimentAnalysis());
         userService.addUser(userInDb);
         return new ResponseEntity<>(userInDb, HttpStatus.NO_CONTENT);
     }
