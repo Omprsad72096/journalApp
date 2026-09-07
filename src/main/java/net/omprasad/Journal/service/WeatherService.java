@@ -14,6 +14,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 @Service
 public class WeatherService {
 
@@ -26,12 +28,33 @@ public class WeatherService {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private RedisService redisService;
+
     public WeatherResponse getWeather(String city) {
+        WeatherResponse weatherResponse = redisService.get("Weather_of_"+ city, WeatherResponse.class);
+        if(weatherResponse!=null) {
+            return weatherResponse;
+        }
+
+
         String finalAPI = appCache.getCache().get(AppCache.keys.WEATHER_API.toString()).replace(PlaceHolders.API_KEY, apiKey).replace(PlaceHolders.CITY, city);
+//        ResponseEntity<WeatherResponse> response = restTemplate.exchange(finalAPI, HttpMethod.GET, null, WeatherResponse.class);
+//        WeatherResponse body = response.getBody();
 
-        ResponseEntity<WeatherResponse> response = restTemplate.exchange(finalAPI, HttpMethod.GET, null, WeatherResponse.class);
+        //manually creating body so that i dont waste api tokens while debugging
+        WeatherResponse body = new WeatherResponse();
+        WeatherResponse.Current current = new WeatherResponse.Current();
+        current.setTemperature(28);
+        current.setFeelslike(31);
+        current.setWeatherDescriptions(List.of("Light rain shower", "Humid"));
+        body.setCurrent(current);
 
-        return response.getBody();
+        if(body!=null) {
+            redisService.set("Weather_of_"+city, body, 3600l);
+        }
+
+        return body;
     }
 
 

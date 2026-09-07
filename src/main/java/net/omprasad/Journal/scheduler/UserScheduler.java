@@ -1,6 +1,7 @@
 package net.omprasad.Journal.scheduler;
 
 
+import lombok.extern.slf4j.Slf4j;
 import net.omprasad.Journal.entity.JournalEntry;
 import net.omprasad.Journal.entity.User;
 import net.omprasad.Journal.repository.UserRepositoryImpl;
@@ -15,6 +16,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Component
 public class UserScheduler {
 
@@ -29,28 +31,20 @@ public class UserScheduler {
     private SentimentAnalysisService sentimentAnalysisService;
 
 
-//    @Scheduled(cron = "0 0 9 ? * SUN") // every sunday 9 am
-    @Scheduled(cron = "0 0/1 * 1/1 * ?") // every minute
+    @Scheduled(cron = "0 0 9 ? * SUN") // every sunday 9 am
+//    @Scheduled(cron = "0 0/1 * 1/1 * ?") // every minute
     public void fetchUserAndSendEmail() {
         List<User> userForSA = userRepository.getUserForSA();
 
-        //We will get users with SA and store their jorunal entries created in last 7 days by user, and get the expected mood, and send email
+        //We will get users with SA and store their jorunal entries created in last 7 days by user,
+        // whichever sentiment is most used by user, we'll return that sentiment
         for(User user: userForSA) {
             List<JournalEntry> journalEntries = user.getJournalEntries();
 
-//            List<JournalEntry> filteredEntries = journalEntries.stream().filter(x -> x.getDate().isAfter(LocalDateTime.now().minus(7, ChronoUnit.DAYS))).collect(Collectors.toList());
-
-            StringBuilder sb = new StringBuilder();
-            LocalDateTime sevenDaysAgo = LocalDateTime.now().minusDays(7);
-            for(JournalEntry j: journalEntries) {
-                if(j.getDate().isAfter(sevenDaysAgo)) {
-                    sb.append(j.getContent()).append(" ");
-                }
-            }
-            String sentiment = sentimentAnalysisService.getSentiment(sb.toString());
+            String sentiment = sentimentAnalysisService.getSentiment(journalEntries);
 
 //            emailService.sendEmail(user.getEmail(), "This is your last weeek mood", sentiment);
-            System.out.println("java scheduler working");
+            log.info("Yoyo Sentiment of user: {}, is: {}", user.getUserName(), sentiment);
         }
     }
 

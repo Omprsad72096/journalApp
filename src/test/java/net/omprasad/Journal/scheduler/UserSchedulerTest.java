@@ -1,4 +1,4 @@
-package net.omprasad.Journal.repository;
+package net.omprasad.Journal.scheduler;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class userRepositoryImplTest {
+public class UserSchedulerTest {
 
     @Autowired
-    private UserRepositoryImpl userRepository;
+    private UserScheduler userScheduler;
 
     @Disabled
     @Test
-    public void testGetUserSA() {
-        Assertions.assertNotNull(userRepository.getUserForSA());
+    public void testFetchUserAndSendEmail() {
+        userScheduler.fetchUserAndSendEmail();
     }
 }
